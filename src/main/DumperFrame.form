@@ -1,0 +1,344 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form xmlns="http://www.intellij.com/uidesigner/form/" version="1" bind-to-class="main.DumperFrame">
+  <grid id="27dc6" binding="rootPanel" layout-manager="GridLayoutManager" row-count="1" column-count="2" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+    <margin top="0" left="0" bottom="0" right="0"/>
+    <constraints>
+      <xy x="20" y="20" width="986" height="883"/>
+    </constraints>
+    <properties/>
+    <border type="none"/>
+    <children>
+      <grid id="4328" layout-manager="GridLayoutManager" row-count="2" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+        <margin top="0" left="0" bottom="0" right="0"/>
+        <constraints>
+          <grid row="0" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties/>
+        <border type="none"/>
+        <children>
+          <scrollpane id="2c30e">
+            <constraints>
+              <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="1" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <horizontalScrollBarPolicy value="31"/>
+              <verticalScrollBarPolicy value="22"/>
+            </properties>
+            <border type="none"/>
+            <children>
+              <component id="45d1a" class="javax.swing.JTable" binding="tableFiles">
+                <constraints/>
+                <properties/>
+              </component>
+            </children>
+          </scrollpane>
+          <toolbar id="4f3">
+            <constraints>
+              <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="1" anchor="0" fill="1" indent="0" use-parent-layout="false">
+                <preferred-size width="276" height="27"/>
+              </grid>
+            </constraints>
+            <properties>
+              <borderPainted value="false"/>
+              <floatable value="false"/>
+            </properties>
+            <border type="none"/>
+            <children>
+              <component id="2379e" class="javax.swing.JButton" binding="buttonAdd">
+                <constraints/>
+                <properties>
+                  <icon value="res/add.gif"/>
+                  <text value=""/>
+                  <toolTipText value="Add pictures to dump"/>
+                </properties>
+              </component>
+              <component id="d8e9b" class="javax.swing.JButton" binding="buttonLoad">
+                <constraints/>
+                <properties>
+                  <icon value="res/load.gif"/>
+                  <text value=""/>
+                  <toolTipText value="Load existing dump"/>
+                </properties>
+              </component>
+              <component id="c5a8e" class="javax.swing.JButton" binding="buttonSave">
+                <constraints/>
+                <properties>
+                  <icon value="res/save.gif"/>
+                  <text value=""/>
+                  <toolTipText value="Save selected files for later (re-)use"/>
+                </properties>
+              </component>
+              <component id="344c8" class="javax.swing.JButton" binding="buttonRemoveSelected">
+                <constraints/>
+                <properties>
+                  <icon value="res/clearsel.gif"/>
+                  <text value=""/>
+                </properties>
+              </component>
+              <component id="6901b" class="javax.swing.JButton" binding="buttonRemoveAll">
+                <constraints/>
+                <properties>
+                  <icon value="res/clearall.gif"/>
+                  <text value=""/>
+                  <toolTipText value="Remove all files from dump"/>
+                </properties>
+              </component>
+              <hspacer id="1a2a">
+                <constraints/>
+              </hspacer>
+              <component id="27d8f" class="javax.swing.JButton" binding="buttonStartStop">
+                <constraints/>
+                <properties>
+                  <enabled value="true"/>
+                  <icon value="res/start.gif"/>
+                  <inheritsPopupMenu value="false"/>
+                  <label value="Start!"/>
+                  <selected value="false"/>
+                  <text value="Start!"/>
+                  <toolTipText value="Start dumping NOW."/>
+                </properties>
+              </component>
+            </children>
+          </toolbar>
+        </children>
+      </grid>
+      <grid id="f65d3" layout-manager="GridLayoutManager" row-count="4" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+        <margin top="0" left="0" bottom="0" right="0"/>
+        <constraints>
+          <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties/>
+        <border type="none"/>
+        <children>
+          <grid id="eda56" layout-manager="GridLayoutManager" row-count="2" column-count="6" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+            <margin top="0" left="0" bottom="0" right="0"/>
+            <constraints>
+              <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties/>
+            <border type="etched" title="Settings"/>
+            <children>
+              <component id="34a44" class="javax.swing.JLabel">
+                <constraints>
+                  <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <labelFor value="93b08"/>
+                  <text value="mode:"/>
+                </properties>
+              </component>
+              <component id="1a807" class="javax.swing.JLabel">
+                <constraints>
+                  <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <labelFor value="c1925"/>
+                  <text value="URL:"/>
+                </properties>
+              </component>
+              <component id="8bdb3" class="javax.swing.JTextField" binding="textFieldBoardName" default-binding="true">
+                <constraints>
+                  <grid row="0" column="3" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="1" indent="0" use-parent-layout="false">
+                    <preferred-size width="40" height="-1"/>
+                  </grid>
+                </constraints>
+                <properties>
+                  <text value="board"/>
+                </properties>
+              </component>
+              <component id="c1925" class="javax.swing.JTextField" binding="textFieldBoardURL">
+                <constraints>
+                  <grid row="0" column="1" row-span="1" col-span="2" vsize-policy="0" hsize-policy="0" anchor="8" fill="1" indent="0" use-parent-layout="false">
+                    <preferred-size width="150" height="-1"/>
+                  </grid>
+                </constraints>
+                <properties/>
+              </component>
+              <component id="93b08" class="javax.swing.JComboBox" binding="modeComboBox" default-binding="true">
+                <constraints>
+                  <grid row="1" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="2" anchor="8" fill="1" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <toolTipText value=""/>
+                </properties>
+              </component>
+              <component id="5e4bc" class="javax.swing.JTextField" binding="textFieldThreadId">
+                <constraints>
+                  <grid row="1" column="2" row-span="1" col-span="2" vsize-policy="0" hsize-policy="1" anchor="8" fill="1" indent="0" use-parent-layout="false">
+                    <preferred-size width="150" height="-1"/>
+                  </grid>
+                </constraints>
+                <properties>
+                  <text value="thread id"/>
+                  <toolTipText value="&quot;ID of the thread you want to dump into.&quot;"/>
+                </properties>
+              </component>
+              <component id="46e6f" class="javax.swing.JCheckBox" binding="spoilerCheckBox" default-binding="true">
+                <constraints>
+                  <grid row="1" column="5" row-span="1" col-span="1" vsize-policy="0" hsize-policy="1" anchor="4" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <enabled value="true"/>
+                  <text value="Spoiler"/>
+                </properties>
+              </component>
+              <component id="81ba1" class="javax.swing.JSpinner" binding="spinnerDelay">
+                <constraints>
+                  <grid row="0" column="5" row-span="1" col-span="1" vsize-policy="0" hsize-policy="2" anchor="8" fill="1" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties/>
+              </component>
+              <component id="45888" class="javax.swing.JLabel">
+                <constraints>
+                  <grid row="0" column="4" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <text value="Delay:"/>
+                </properties>
+              </component>
+            </children>
+          </grid>
+          <grid id="32d47" layout-manager="GridLayoutManager" row-count="1" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+            <margin top="0" left="0" bottom="0" right="0"/>
+            <constraints>
+              <grid row="2" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="0" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties/>
+            <border type="etched" title="Comment"/>
+            <children>
+              <scrollpane id="c2127">
+                <constraints>
+                  <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="2" hsize-policy="0" anchor="0" fill="3" indent="1" use-parent-layout="false">
+                    <minimum-size width="400" height="200"/>
+                    <preferred-size width="400" height="200"/>
+                  </grid>
+                </constraints>
+                <properties>
+                  <horizontalScrollBarPolicy value="31"/>
+                  <verticalScrollBarPolicy value="22"/>
+                </properties>
+                <border type="none"/>
+                <children>
+                  <component id="b554c" class="javax.swing.JTextArea" binding="textAreaComment">
+                    <constraints/>
+                    <properties>
+                      <lineWrap value="true"/>
+                      <toolTipText value="%t(otal)&#10;%c(urrent)&#10;%n(ame)&#10;%s(ize)&#10;%h(uman readable size)&#10;%r(esolution)&#10;%p(ercent, t/c*100)"/>
+                    </properties>
+                  </component>
+                </children>
+              </scrollpane>
+            </children>
+          </grid>
+          <grid id="3cd1c" layout-manager="GridLayoutManager" row-count="2" column-count="4" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+            <margin top="0" left="0" bottom="0" right="0"/>
+            <constraints>
+              <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties/>
+            <border type="etched" title="Post parameters"/>
+            <children>
+              <component id="c3e80" class="javax.swing.JTextField" binding="textFieldMail">
+                <constraints>
+                  <grid row="1" column="3" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="1" indent="0" use-parent-layout="false">
+                    <preferred-size width="150" height="-1"/>
+                  </grid>
+                </constraints>
+                <properties>
+                  <text value=""/>
+                  <toolTipText value="Sage goes in here."/>
+                </properties>
+              </component>
+              <component id="5e6ef" class="javax.swing.JLabel">
+                <constraints>
+                  <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="9" fill="0" indent="0" use-parent-layout="false">
+                    <preferred-size width="40" height="16"/>
+                  </grid>
+                </constraints>
+                <properties>
+                  <text value="Subject"/>
+                </properties>
+              </component>
+              <component id="bc5d4" class="javax.swing.JTextField" binding="textFieldSub">
+                <constraints>
+                  <grid row="0" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="1" indent="0" use-parent-layout="false">
+                    <preferred-size width="150" height="-1"/>
+                  </grid>
+                </constraints>
+                <properties/>
+              </component>
+              <component id="fb03e" class="javax.swing.JLabel">
+                <constraints>
+                  <grid row="1" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="9" fill="0" indent="0" use-parent-layout="false">
+                    <preferred-size width="32" height="16"/>
+                  </grid>
+                </constraints>
+                <properties>
+                  <text value="E-mail"/>
+                </properties>
+              </component>
+              <component id="7f2b2" class="javax.swing.JTextField" binding="textFieldName">
+                <constraints>
+                  <grid row="0" column="3" row-span="1" col-span="1" vsize-policy="0" hsize-policy="2" anchor="8" fill="1" indent="0" use-parent-layout="false">
+                    <preferred-size width="150" height="-1"/>
+                  </grid>
+                </constraints>
+                <properties/>
+              </component>
+              <component id="c2926" class="javax.swing.JLabel">
+                <constraints>
+                  <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <text value="Password"/>
+                </properties>
+              </component>
+              <component id="2ce5f" class="javax.swing.JLabel">
+                <constraints>
+                  <grid row="0" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="9" fill="0" indent="0" use-parent-layout="false">
+                    <preferred-size width="40" height="16"/>
+                  </grid>
+                </constraints>
+                <properties>
+                  <text value="Name"/>
+                </properties>
+              </component>
+              <component id="8308f" class="javax.swing.JPasswordField" binding="passwordField">
+                <constraints>
+                  <grid row="1" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="2" anchor="8" fill="1" indent="0" use-parent-layout="false">
+                    <preferred-size width="150" height="-1"/>
+                  </grid>
+                </constraints>
+                <properties/>
+              </component>
+            </children>
+          </grid>
+          <grid id="908f6" layout-manager="GridLayoutManager" row-count="1" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+            <margin top="0" left="0" bottom="0" right="0"/>
+            <constraints>
+              <grid row="3" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="0" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties/>
+            <border type="etched" title="Preview"/>
+            <children>
+              <component id="e94c1" class="javax.swing.JLabel" binding="labelPreview">
+                <constraints>
+                  <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="9" fill="0" indent="0" use-parent-layout="false">
+                    <minimum-size width="400" height="400"/>
+                    <preferred-size width="400" height="400"/>
+                    <maximum-size width="400" height="400"/>
+                  </grid>
+                </constraints>
+                <properties>
+                  <horizontalAlignment value="0"/>
+                  <horizontalTextPosition value="0"/>
+                  <text value="No image selected"/>
+                </properties>
+              </component>
+            </children>
+          </grid>
+        </children>
+      </grid>
+    </children>
+  </grid>
+</form>
